@@ -1,0 +1,17 @@
+{
+  "name": "tes-vercel",
+  "version": "1.0.0",
+  "description": "Deskripsi singkat proyek Anda",
+  "main": "server.js", // Ganti dengan nama file utama aplikasi Anda
+  "scripts": {
+    "start": "node server.js" // Ganti dengan perintah untuk menjalankan server Anda
+  },
+  "author": "SS6",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1" // Atur versi Express yang Anda gunakan
+  },
+  "engines": {
+    "node": ">=12.0.0" // Versi minimum Node.js yang diperlukan
+  }
+}
