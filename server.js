@@ -1,15 +1,16 @@
 const express = require('express');
-const app = express();
 
-// Mendapatkan port dari variabel lingkungan process.env.PORT
-const port = process.env.PORT || 4000;
+const app = express()
+const PORT = 8000
 
-// Mendefinisikan rute untuk aplikasi Anda
 app.get('/', (req, res) => {
-  res.send('Halo dari server Anda!');
-});
+  res.send('Hello World')
+})
 
-// Mulai mendengarkan port yang ditentukan oleh Vercel
-app.listen(port, () => {
-  console.log(`Server sedang berjalan di port ${port}`);
-});
+app.get('/about', (req, res) => {
+  res.send('About route 🎉 ')
+})
+
+app.listen(PORT, () => {
+  console.log(`✅ Server is running on port ${PORT}`);
+})
